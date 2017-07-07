@@ -38,9 +38,10 @@ layout: compress
                 </div>
             </div>
         </div>
-        <div id="uyan_frame"></div>
-        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2138229"></script>
-        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
+        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp">
+          <div id="uyan_frame"></div>
+          <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2138229"></script>
+        </section><!-- /#disqus_thread -->{% endif %}
     </header>
 
     {% include scripts.html %}
